@@ -1,0 +1,196 @@
+body {
+    background: rgb(204, 204, 204);
+    font-size: 9px;
+}
+
+page {
+    background: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 0.5cm;
+}
+
+page[size="A4"] {
+    width: 21cm;
+    height: 29.7cm;
+}
+
+page .container {
+    display: block;
+}
+
+page .container .section-1 {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.logo img {
+    width: 150px;
+    margin: auto;
+    display: block;
+}
+
+.logo p {
+    width: 300px;
+    text-align: center;
+}
+
+.factura {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    width: 200px;
+}
+
+.factura p {
+    text-align: center;
+    border: 2px solid black;
+    padding: 10px 45px;
+    font-size: 10px;
+}
+
+table.factura-info {
+    width: 100%;
+    padding: 20px 0 20px 0;
+}
+
+.factura-info tr td {
+    padding: 0 10px 5px 0;
+
+}
+
+tr td.font-bold {
+    font-weight: bold;
+    letter-spacing: 0px;
+}
+
+.campo {
+    width: 100px;
+}
+
+table.detalle {
+    width: 100%;
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+.detalle tr th {
+    font-weight: bold;
+    background-color: black;
+    color: white;
+}
+
+.detalle tr td {
+    border-left: 2px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th.descripcion {
+    width: 250px;
+}
+
+.space td {
+    padding-bottom: 50px;
+}
+
+.operacion td {
+    border-top: 2px solid black;
+    text-align: center;
+    padding: 10px;
+}
+
+tr.detalle-item td {
+    text-align: center;
+    font-size: 8px;
+}
+
+td.op-total {
+    text-align: right;
+}
+
+.space{
+    padding: 5px;
+}
+
+h2.texto-cuentas{
+    font-size: 10px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.cuenta-total{
+    display: flex;
+    justify-content: space-between;
+}
+
+table.banco{
+    border: 2px solid black;
+}
+table.total-monto {
+    border-collapse: collapse;
+    width: 250px;
+}
+
+.total-monto th{
+    text-align: left;
+    background-color: black;
+    color: white;
+    padding: 2px;
+    width: 110px;
+    font-weight: 400;
+}
+.total-monto td{
+    padding: 0 10px;
+    text-align: right;
+}
+
+h2.cantidad{
+    font-size: 10px;
+    border: 2px solid black;
+    width: 420px;
+    padding: 2px 5px;
+}
+
+.cuotas-qr{
+    display: flex;
+    justify-content: space-between;
+}
+
+table.info-cuota{
+    border-collapse: collapse;
+    width: 200px;
+}
+
+.info-cuota tr th {
+    font-weight: bold;
+    border: 2px solid black;
+    text-align: left;
+}
+
+.info-cuota tr td {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+img.qr{
+    width: 120px;
+}
+
+table.retencion{
+    width: 100%;
+    padding: 5px 0;
+}
+
+.retencion td{
+    width: 77px;
+}
+
+.retencion th{
+    text-align: left;
+    width: 150px;
+}

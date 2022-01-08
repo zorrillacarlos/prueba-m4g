@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <page size="A4">
+        <div class="container">
+
+            <!-- Encabezado Logo, N° Factura -->
+
+            <div class="section-1">
+                <div class="logo">
+                    <img src="https://1000marcas.net/wp-content/uploads/2020/02/logo-Google.png" alt="Logo">
+                    <p class="text-logo">
+                        Av Primavera 643 Of. 204 - San Borja - Lima Telf: (01) 719-9192 <br>
+                        Correo:ventas@cadsolutions.pe</ </p> </div> <div class="factura">
+                        <p>
+                            <b> R.U.C 20517999688<br>
+                                FACTURA<br>
+                                ELECTRÓNICA<br></b>
+                            <span>N° %InvoiceNumber%</span>
+                        </p>
+                </div>
+            </div>
+
+            <!-- Información de la Factura -->
+            <table class="factura-info">
+                <tr>
+                    <td class="font-bold">Señor(es):</td>
+                    <td colspan="3"> MOTORES DIESEL ANDINOS S.A - MODASA</td>
+                    <td class="font-bold">Fecha de emisión</td>
+                    <td>14/10/2021</td>
+                </tr>
+                <tr>
+                    <td class="font-bold">Dirección</td>
+                    <td colspan="3"> AV. PASEO LA REPUBLICA 643-INT. 503 - SAN ISIDRO - LIMA</td>
+                    <td class="font-bold">Orden de compra</td>
+                    <td>43243243242</td>
+                </tr>
+                <tr>
+                    <td class="font-bold">Ruc</td>
+                    <td class="campo">20528999588</td>
+                    <td colspan="1" class="font-bold">Guía de Remisión</td>
+                    <td class="campo"></td>
+                    <td class="font-bold">Tipo de Transacción</td>
+                    <td>Crédito</td>
+                </tr>
+                <tr>
+                    <td colspan="4"></td>
+                    <td class="font-bold">Moneda</td>
+                    <td>DÓLAR AMERICANO</td>
+                </tr>
+            </table>
+
+            <!-- Detalle Factura -->
+
+            <table class="detalle">
+                <tr>
+                    <th>
+                        Cantidad
+                    </th>
+
+                    <th>
+                        U.Medida
+                    </th>
+
+                    <th class="descripcion">
+                        Descripción
+                    </th>
+
+                    <th>
+                        Precio Unit.
+                    </th>
+
+                    <th>
+                        Importe
+                    </th>
+                </tr>
+
+                <tr class="detalle-operacion">
+                    <td>%ItemQty%</td>
+                    <td>UNIDAD</td>
+                    <td>%ItemName%</td>
+                    <td>%ItemRate%</td>
+                    <td>$ %ItemTotal%</td>
+                </tr>
+
+                <tr class="space">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr class="detalle-item">
+                    <td></td>
+                    <td></td>
+                    <td>Operación sujeta al Sistema de Pago de Obligaciones <br>
+                        Tributarias con el Gobierno Central <br>
+                        SPOT 12%. Cta. Banco de la Nación N° 00-068091713-Códigos <br>
+                        (01) Venta de bien o servicio / (037)Demás servicios grabados <br>
+                        con el IGV</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr class="operacion">
+                    <td colspan="4">Valor de Venta de Operaciones gratuitas</td>
+                    <td class="op-total">$%Total%</td>
+                </tr>
+            </table>
+
+            <div class="space"></div>
+
+            <!-- Cuentas Bancarias -->
+
+            <h2 class="texto-cuentas">CUENTAS BANCARIAS</h2>
+
+            <div class="cuenta-total">
+
+                <div class="cuentas">
+
+                    <h2 class="texto-cuentas">BANCO DE CRÉDITO</h2>
+                    <table class="banco">
+
+                        <tr>
+                            <td>CTA. CTE. DOLARES $: 194-1734073198</td>
+                        </tr>
+                        <tr>
+                            <td>CCI. DOLARES $: 002-194-001734073198-97</td>
+                        </tr>
+                        <tr>
+                            <td>CTA- CTE. SOLES: 194-1769155-0-51</td>
+                        </tr>
+                        <tr>
+                            <td>CCI. SOLES: 002-194-001769155051-95</td>
+                        </tr>
+
+                    </table>
+
+                    <h2 class="texto-cuentas">BANCO CONTINENTAL</h2>
+                    <table class="banco">
+
+                        <tr>
+                            <td>CTA. CTE. DOLARES $: 0011-0152-01100086260-65</td>
+                        </tr>
+                        <tr>
+                            <td>CTA. CTE. DOLARES $: 0011-0152-01100086260-65</td>
+                        </tr>
+                        <tr>
+                            <td>CTA- CTE. SOLES S/.: 0011-0152-0100086732-63</td>
+                        </tr>
+                        <tr>
+                            <td>CCI. SOLES S/.: 011-152-000100086732-63</td>
+                        </tr>
+
+                    </table>
+
+                </div>
+
+                <div class="total">
+
+                    <table class="total-monto">
+                        <tr>
+                            <th>Sub-total</th>
+                            <td>$6,100.00</td>
+                        </tr>
+                        <tr>
+                            <th>Otros Cargos</th>
+                            <td>$0.00</td>
+                        </tr>
+                        <tr>
+                            <th>Descuento Total</th>
+                            <td>$0.00</td>
+                        </tr>
+                        <tr>
+                            <th>Operación Gravada</th>
+                            <td>$6,100.00</td>
+                        </tr>
+                        <tr>
+                            <th>Operación Exonerada</th>
+                            <td>$0.00</td>
+                        </tr>
+                        <tr>
+                            <th>Operación Inafecta</th>
+                            <td>$0.00</td>
+                        </tr>
+                        <tr>
+                            <th>%TaxName%</th>
+                            <td>$%TaxValue%</td>
+                        </tr>
+                        <tr>
+                            <th>IMPORTE TOTAL</th>
+                            <td>$7,198.00</td>
+                        </tr>
+                    </table>
+
+                </div>
+
+            </div>
+
+            <div class="space"></div>
+
+            <h2 class="cantidad">SON: SIETE MIL CIENTO NOVENTA Y OCHO CON 00/100 DOLARES AMERICANOS</h2>
+
+            <div class="space"></div>
+
+            <div class="cuotas-qr">
+
+                <div class="cuotas">
+
+                    <p class="text-info">Información del credito: Letras. Cheques, etc</p>
+                    <b>Monto neto Pendiente de pago:</b> $6,198.00 <br>
+                    <b>Total de cuotas: 3</b>
+
+                    <div class="space"></div>
+
+                    <table class="info-cuota">
+                        <tr>
+                            <th>N° Cuota</th>
+                            <th>Fec. Ven</th>
+                            <th>Monto</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>13/11/2021</td>
+                            <td>2,111.42</td>
+
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>13/12/2021</td>
+                            <td>2,111.42</td>
+                        </tr>
+                        <tr>
+
+                            <td>3</td>
+                            <td>12/01/2022</td>
+                            <td>2,111.42</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <img src="https://iphoneros.com/wp-content/uploads/2017/02/codigoqrdeiphoneros.gif" alt="" class="qr">
+
+            </div>
+            <div class="space"></div>
+            <table class="retencion">
+                <tr>
+                    <th>Información de la rentención</th>
+                </tr>
+                <tr>
+                    <td>Base imponible de <br>Rentención</td>
+                    <td>S/. 3,8214.00 </td>
+                    <td>Porcentaje de <br>Rentención</td>
+                    <td>3%</td>
+                    <td>Monto de <br> Rentención</td>
+                    <td>S/. 1,146.42 </td>
+                </tr>
+
+            </table>
+            <div class="space"></div>
+            <center class="consulta">
+                <b>Representación Impresa de la Factura Electrónica <br>
+                Consulta tu Comprobante en nuestra Web htttp://XXXXXXXXXXXXXXXXXXXXX</b>
+            </center>
+        </div>
+    </page>
+</body>
+
+</html>
